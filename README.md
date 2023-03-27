@@ -12,11 +12,17 @@ this is simple laravel-api project to manage users and tasks
 - Run ```php artisan migrate```
 - Run ```php artisan migrate:refresh --seed```
 
+- Server will run on ```http://localhost:8082```
+
 
 ## Api endpoints
 
+
 - **[Documantation for Users](https://documenter.getpostman.com/view/25064323/2s93RQTZSB)**
 - **[Documantation for Tasks](https://documenter.getpostman.com/view/25064323/2s93RQTZS8)**
+
+``` Or import postman collections from postman directory```
+
 
 ### Users
 
