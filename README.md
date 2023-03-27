@@ -1,6 +1,6 @@
 ## About Tasks
 
-this is simple laravel-api project to manage users and tasks:
+this is simple laravel-api project to manage users and tasks
 
 ## Installation
 
@@ -53,3 +53,4 @@ twenty tasks. these tasks will be randomly assigned to users on seed.
 - Admins can crud users(except users only registration)/tasks. assignee tasks
 - Moderators can view Users and Tasks, Update or delete Tasks. assignee tasks
 - Users only can view Tasks or change Task status on which they are assigned to. 
+- Roles and Permissions are managed with **[https://github.com/spatie/laravel-permission](Spatie)**
