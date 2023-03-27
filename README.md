@@ -9,7 +9,7 @@ this is simple laravel-api project to manage users and tasks
 - Run ```docker-compose up```
 - Enter tasks_app container ```docker exec -it <container_id> bash```
 - Run ```composer install```
-- Run ```php artisan migrate```
+- Run ```chown -R www-data:www-data /var/www/html/storage/*```
 - Run ```php artisan migrate:refresh --seed```
 
 - Server will run on ```http://localhost:8082```
