@@ -24,7 +24,7 @@ class AuthController extends Controller
         $request->validated($request->all());
         
         if(!Auth::attempt($request->only('email', 'password'))){
-            return $this->error('', 'Credentials do not match', 401);
+            return $this->error('', 'wrong_credentials', 401);
         }
         return $this->getUserResponseByEmail($request->email);
     }
@@ -54,7 +54,7 @@ class AuthController extends Controller
         $user = User::where('email', $email)->first();
         if(is_null($user))
         {
-            return $this->error('', 'Please register first!', 400);
+            return $this->error('', 'please_register_first', 400);
         }
 
         $user->getPermissionsViaRoles();

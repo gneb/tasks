@@ -63,7 +63,7 @@ class TasksController extends Controller
 
         return $this->success([
             'task' => $task->toArray(),
-        ], 'role_updated', 200);
+        ], 'task_updated', 200);
     }
 
     public function updateStatus(EditStatusRequest $request, $task_id)
