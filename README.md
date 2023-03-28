@@ -44,7 +44,9 @@ email: user2@user.user
 password: user2
 ```
 
-twenty tasks. these tasks will be randomly assigned to users on seed.
+twenty tasks. these tasks will be randomly assigned to users on seed. 
+to search in users append get parameter ```q``` for example: ```/api/users?q=user3``` it will search of ```username, email, name```
+to search in tasks append get parameters ```status, assignee_id``` for example: ```/api/tasks?status=InProgress&assignee_id=2```
 
 
 
